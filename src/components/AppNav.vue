@@ -97,6 +97,9 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.mobileNav li {
+  margin-top: 1em;
+}
 .close {
   margin-bottom: 5em;
   display: inline-block;
