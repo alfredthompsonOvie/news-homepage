@@ -11,7 +11,7 @@
 			<img src="@/assets/images/icon-menu.svg" alt="menu icon" class="menu" />
 		</div>
 		<!-- mobile Nav -->
-		<ul class="mobileNav" v-if="isMobile">
+		<ul class="mobileNav" v-show="mobileNav" @click="toggleMobileNav">
 			<div class="close">
 				<img
 					src="@/assets/images/icon-menu-close.svg"
@@ -63,13 +63,30 @@ export default {
 	name: "AppNav",
 	data() {
 		return {
-			isMobile: true,
-			windowWidth: null,
+			isMobile: null,
+      windowWidth: null,
+      mobileNav: null,
 		};
 	},
 	methods: {
-		toggleMobileNav() {},
-	},
+    toggleMobileNav() {
+      this.mobileNav = !this.mobileNav
+    },
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
+      if (this.windowWidth <= 992) {
+        this.isMobile = true;
+        return
+      }
+      this.isMobile = false;
+      this.mobileNav = false;
+      return
+    }
+  },
+  mounted() { },
+  created() {
+    window.addEventListener("resize", this.checkScreen)
+  },
 };
 </script>
 
@@ -91,17 +108,14 @@ export default {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	width: 60%;
+  width: 100%;
+	max-width: 60%;
 	background-color: #fff;
 	padding: 2em;
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 470px) {
-  .mobileNav {
-	width: 18.5em;
-}
-}
+
 .mobileNav li {
   margin-top: 1.5em;
 }
@@ -116,5 +130,16 @@ export default {
 }
 .nav__link:hover {
   letter-spacing: 1px;
+}
+
+.mainNav {
+  display: flex;
+  gap: 2em;
+}
+
+@media (min-width: 470px) {
+  .mobileNav {
+	max-width: 18.5em;
+}
 }
 </style>
