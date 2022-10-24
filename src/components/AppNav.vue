@@ -21,38 +21,38 @@
 			</div>
 
 			<li>
-				<a href="#">Home</a>
+				<a href="#" class="nav__link">Home</a>
 			</li>
 			<li>
-				<a href="#">New</a>
+				<a href="#" class="nav__link">New</a>
 			</li>
 			<li>
-				<a href="#">Popular</a>
+				<a href="#" class="nav__link">Popular</a>
 			</li>
 			<li>
-				<a href="#">Trending</a>
+				<a href="#" class="nav__link">Trending</a>
 			</li>
 			<li>
-				<a href="#">Categories</a>
+				<a href="#" class="nav__link">Categories</a>
 			</li>
 		</ul>
 
 		<!-- tablet/ desktop Nav -->
 		<ul class="mainNav" v-if="!isMobile">
-			<li>
-				<a href="#">Home</a>
+      <li>
+				<a href="#" class="nav__link">Home</a>
 			</li>
 			<li>
-				<a href="#">New</a>
+				<a href="#" class="nav__link">New</a>
 			</li>
 			<li>
-				<a href="#">Popular</a>
+				<a href="#" class="nav__link">Popular</a>
 			</li>
 			<li>
-				<a href="#">Trending</a>
+				<a href="#" class="nav__link">Trending</a>
 			</li>
 			<li>
-				<a href="#">Categories</a>
+				<a href="#" class="nav__link">Categories</a>
 			</li>
 		</ul>
 	</nav>
@@ -91,18 +91,30 @@ export default {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	width: 12em;
+	width: 60%;
 	background-color: #fff;
 	padding: 2em;
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 470px) {
+  .mobileNav {
+	width: 18.5em;
+}
+}
 .mobileNav li {
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 .close {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
   display: inline-block;
   margin-left: auto;
+}
+.nav__link {
+  color: var(--VeryDarkBlue);
+  font-weight: var(--fw-bold);
+}
+.nav__link:hover {
+  letter-spacing: 1px;
 }
 </style>
