@@ -11,31 +11,33 @@
 			<img src="@/assets/images/icon-menu.svg" alt="menu icon" class="menu" />
 		</div>
 		<!-- mobile Nav -->
-		<ul class="mobileNav" v-show="mobileNav" @click="toggleMobileNav">
-			<div class="close">
-				<img
-					src="@/assets/images/icon-menu-close.svg"
-					alt="menu icon"
-					class="menu"
-				/>
-			</div>
-
-			<li>
-				<a href="#" class="nav__link">Home</a>
-			</li>
-			<li>
-				<a href="#" class="nav__link">New</a>
-			</li>
-			<li>
-				<a href="#" class="nav__link">Popular</a>
-			</li>
-			<li>
-				<a href="#" class="nav__link">Trending</a>
-			</li>
-			<li>
-				<a href="#" class="nav__link">Categories</a>
-			</li>
-		</ul>
+    <transition name="fade">
+      <ul class="mobileNav" v-show="mobileNav" @click="toggleMobileNav">
+        <div class="close">
+          <img
+            src="@/assets/images/icon-menu-close.svg"
+            alt="menu icon"
+            class="menu"
+          />
+        </div>
+  
+        <li>
+          <a href="#" class="nav__link">Home</a>
+        </li>
+        <li>
+          <a href="#" class="nav__link">New</a>
+        </li>
+        <li>
+          <a href="#" class="nav__link">Popular</a>
+        </li>
+        <li>
+          <a href="#" class="nav__link">Trending</a>
+        </li>
+        <li>
+          <a href="#" class="nav__link">Categories</a>
+        </li>
+      </ul>
+    </transition>
 
 		<!-- tablet/ desktop Nav -->
 		<ul class="mainNav" v-if="!isMobile">
@@ -70,7 +72,7 @@ export default {
 	},
 	methods: {
     toggleMobileNav() {
-      this.mobileNav = !this.mobileNav
+      this.mobileNav = !this.mobileNav;
     },
     checkScreen() {
       this.windowWidth = window.innerWidth;
@@ -83,9 +85,9 @@ export default {
       return
     }
   },
-  mounted() { },
   created() {
-    window.addEventListener("resize", this.checkScreen)
+    window.addEventListener("resize", this.checkScreen);
+    this.checkScreen();
   },
 };
 </script>
@@ -141,5 +143,12 @@ export default {
   .mobileNav {
 	max-width: 18.5em;
 }
+}
+
+.fade-enter-from, .fade-leave-to {
+  transform: translateX(100%);
+}
+.fade-enter-active, .fade-leave-active {
+  transition: all .3s linear;
 }
 </style>
