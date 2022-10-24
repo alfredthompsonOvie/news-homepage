@@ -22,6 +22,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+.attribution a:hover {
+  background-color: hsla(160, 100%, 37%, 0.2);
+}

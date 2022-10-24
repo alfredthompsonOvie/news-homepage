@@ -1,10 +1,6 @@
 <template>
   <div>
-    Home
-  New
-  Popular
-  Trending
-  Categories
+  <app-nav />
 
   The Bright Future of Web 3.0?
 
@@ -44,8 +40,12 @@
 </template>
 
 <script>
+import AppNav from "@/components/AppNav.vue";
   export default {
-    name: "App"
+  name: "App",
+  components: {
+    AppNav
+    }
   }
 </script>
 
