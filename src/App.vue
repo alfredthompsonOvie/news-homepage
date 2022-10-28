@@ -2,9 +2,7 @@
   <app-nav />
   <main>
     <section class="hero">
-      <div class="hero__img">
-        <!-- <img src="@/assets/images/image-web-3-mobile.jpg" alt="web 3 image"> -->
-      </div>
+      <div class="hero__img"></div>
       <div class="content">
         <h1 class="title">The Bright Future of Web 3.0?</h1>
         <div class="description">
@@ -16,7 +14,23 @@
         </div>
       </div>
     </section>
-    <aside></aside>
+    <aside>
+      <h2 class="heading">New</h2>
+      <div class="card">
+        <h3 class="card__heading">Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+  
+</div>
+      <div class="card">
+        <h3 class="card__heading">The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div class="card">
+        <h3 class="card__heading">Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+  
+      </div>
+    </aside>
     <section></section>
   </main>
   <div>
@@ -27,16 +41,13 @@
 
   
 
-  New 
+   
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+  
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+  
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+  
 
   01
   Reviving Retro PCs

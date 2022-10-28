@@ -46,6 +46,11 @@ ul {
 main {
 	margin-top: 1em;
 }
+aside {
+	background-color: var(--VeryDarkBlue);
+	padding: 1em;
+	color: var(--Off-white);
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;
