@@ -1,13 +1,31 @@
 <template>
-  <div>
   <app-nav />
+  <main>
+    <section class="hero">
+      <div class="hero__img">
+        <!-- <img src="@/assets/images/image-web-3-mobile.jpg" alt="web 3 image"> -->
+      </div>
+      <div class="content">
+        <h1 class="title">The Bright Future of Web 3.0?</h1>
+        <div class="description">
+          <p class="text">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
+          <a href="#" class="cta">Read more</a>
+        </div>
+      </div>
+    </section>
+    <aside></aside>
+    <section></section>
+  </main>
+  <div>
 
-  The Bright Future of Web 3.0?
+  
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+  
 
-  Read more
+  
 
   New 
 

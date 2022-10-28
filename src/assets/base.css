@@ -43,6 +43,9 @@ img {
 ul {
 	list-style: none;
 }
+main {
+	margin-top: 1em;
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;
