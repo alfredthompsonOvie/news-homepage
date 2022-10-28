@@ -40,11 +40,14 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+p {
+	font-size: var(--fs-paragraph);
+}
 ul {
 	list-style: none;
 }
-main {
-	margin-top: 1em;
+nav {
+  padding: 2rem 0;
 }
 aside {
 	background-color: var(--VeryDarkBlue);
@@ -54,6 +57,7 @@ aside {
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	padding-bottom: 1em;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
