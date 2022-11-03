@@ -38,6 +38,10 @@
 	margin: 1em 0;
 	color: var(--Off-white);
 	background-color: var(--SoftRed);
+	transition: all .3s linear;
+}
+.cta:hover {
+	background-color: var(--VeryDarkBlue);
 }
 
 /* ASIDE */
