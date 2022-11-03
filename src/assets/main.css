@@ -48,12 +48,21 @@
 }
 .card {
 	padding: 1.5em 0;
+	transition: all .3s linear;
+	cursor: pointer;
 }
 .card + .card {
 	border-top: 1px solid var(--GrayishBlue);
 }
 .card:last-of-type {
 	padding-bottom: 0;
+}
+.card__heading {
+	transition: all .3s linear;
+}
+.card:hover .card__heading {
+	color: var(--SoftOrange);
+	cursor: pointer;
 }
 .card p {
 	color: var(--GrayishBlue);
