@@ -129,9 +129,10 @@ export default {
 .nav__link {
   color: var(--VeryDarkBlue);
   font-weight: var(--fw-bold);
+  transition: all .3s linear;
 }
 .nav__link:hover {
-  letter-spacing: 1px;
+  color: var(--SoftRed);
 }
 
 .mainNav {
