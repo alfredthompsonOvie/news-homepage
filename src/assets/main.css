@@ -87,6 +87,11 @@
   display: flex;
   gap: 1em;
   margin: .5em 0;
+	cursor: pointer;
+}
+/* change this */
+.article__card:hover .article__heading-title {
+	color: var(--SoftRed);
 }
 .article__card img {
   width: 100px;
