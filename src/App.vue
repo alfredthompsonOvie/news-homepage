@@ -11,6 +11,7 @@
 						power of the platforms back into the hands of the people. But is it
 						really fulfilling its promise?
 					</p>
+					<!-- i didn't use routerlink here because this project is just a landing page without routiing capabilities -->
 					<a href="#" class="cta">Read more</a>
 				</div>
 			</div>
@@ -37,6 +38,7 @@
 			</div>
 		</aside>
 		<section class="articles">
+			<!-- use router links -->
 			<article class="article__card">
 				<img src="@/assets/images/image-retro-pcs.jpg" alt="" />
 				<div class="article__content">
@@ -68,7 +70,7 @@
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			>. Coded by <a href="https://www.linkedin.com/in/alfredthompsonovie/">Alfred Thompson Ovie</a>.
 		</div>
 	</div>
 </template>
