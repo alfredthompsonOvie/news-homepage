@@ -102,7 +102,6 @@ export default {
 	width: 3.5em;
 }
 .menu {
-	/* width: 2.5em; */
 	cursor: pointer;
 }
 .mobileNav {
@@ -110,12 +109,13 @@ export default {
 	top: 0;
 	bottom: 0;
 	right: 0;
-  width: 100%;
 	max-width: 60%;
-	background-color: #fff;
+  width: 100%;
 	padding: 2em;
   display: flex;
   flex-direction: column;
+	background-color: #fff;
+  z-index: 99;
 }
 
 .mobileNav li {
@@ -150,6 +150,6 @@ export default {
   transform: translateX(100%);
 }
 .fade-enter-active, .fade-leave-active {
-  transition: all .3s linear;
+  transition: all .5s linear;
 }
 </style>
